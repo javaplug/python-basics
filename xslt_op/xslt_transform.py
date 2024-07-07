@@ -10,7 +10,7 @@ def convert(input_xml, transformation, output_xml):
     transform = ET.XSLT(xslt)
     result = transform(dom)
     infile = ET.tostring(result, pretty_print=True, encoding='unicode')
-    outfile = open('output.xml', 'a')
+    outfile = open(output_xml, 'a')
     outfile.write(infile)
 
 
