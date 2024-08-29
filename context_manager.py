@@ -1,7 +1,8 @@
-def __enter__(self):
-    print('Entering')
-    return 'some data'
+
 class Manager:
+    def __enter__(self):
+        print('Entering')
+        return 'some data'
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         print('Existing')
